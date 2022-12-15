@@ -1,0 +1,25 @@
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 2rem 0.625rem;
+}
+
+.service {
+    background-color: $white;
+    padding: 15px;
+    text-align: center;
+
+    &__icon {
+        font-size: 3rem;
+    }
+
+    &__heading {
+        @include font-style-header();
+    }
+
+    &__text {
+        @include font-style-paragraph();
+        margin: 5px 0 0 0;
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "name": "css_grid_mini_project_landing_page",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "private": true,
+    "scripts": {
+        "clean:output": "rimraf dist",
+        "start": "npm run clean:output && parcel src/Pages/*.html",
+        "build": "npm run clean:output && parcel build"
+    },
+    "keywords": [
+        "css grid"
+    ],
+    "author": "sulistio",
+    "license": "ISC",
+    "devDependencies": {
+        "@parcel/transformer-babel": "^2.8.0",
+        "@parcel/transformer-sass": "^2.8.0",
+        "parcel": "^2.8.0",
+        "rimraf": "^3.0.2"
+    }
+}

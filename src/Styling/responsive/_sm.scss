@@ -1,0 +1,12 @@
+@include sm {
+    .header {
+        grid-template-areas:
+            'hero'
+            'feature-1'
+            'feature-2';
+
+        .features {
+            padding: 2rem 0;
+        }
+    }
+}

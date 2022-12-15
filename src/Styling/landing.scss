@@ -1,0 +1,12 @@
+@import 'variables';
+@import 'mixins';
+
+@import './sections/root';
+@import './sections/header';
+@import './sections/nav';
+@import './sections/services';
+@import './sections/gallery';
+
+@import './responsive/lg';
+@import './responsive/md';
+@import './responsive/sm';

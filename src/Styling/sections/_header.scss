@@ -1,0 +1,54 @@
+.header {
+    display: grid;
+    grid-template-areas:
+        'hero hero feature-1'
+        'hero hero feature-2';
+
+    &__hero {
+        grid-area: hero;
+        min-height: 300px;
+        padding: 50px;
+        background-image: url('../Assets/images/Hero/Laptop_Hero_1-1200.jpg');
+        background-position: center;
+        background-size: cover;
+
+        &__heading {
+            @include font-style-header(1.5rem, 600);
+            display: none;
+        }
+
+        &__sub-heading {
+            @include font-style-paragraph();
+            display: none;
+        }
+    }
+
+    .features {
+        display: grid;
+        place-content: center;
+        text-align: center;
+        color: $white;
+
+        &__price {
+            @include font-style-header(1.75rem, 600);
+        }
+
+        &__item {
+            @include font-style-paragraph();
+        }
+
+        &--1 {
+            grid-area: feature-1;
+            background-image: url('../Assets/images/Hero/Laptop_Hero_2-1200.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+
+        &--2 {
+            grid-area: feature-2;
+            background-image: url('../Assets/images/Hero/Laptop_Hero_3-1200.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}

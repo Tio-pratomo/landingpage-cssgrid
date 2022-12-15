@@ -1,0 +1,41 @@
+@mixin font-style-header($size: 1.5rem, $weight: 700) {
+    font-family: 'Exo 2', sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@mixin font-style-paragraph($size: 1rem, $weight: 400) {
+    font-family: 'Poppins', sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@mixin sm {
+    @media (max-width: map-get($breakpoints, 'sm')) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: map-get($breakpoints, 'md')) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (max-width: map-get($breakpoints, 'lg')) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (max-width: map-get($breakpoints, 'xl')) {
+        @content;
+    }
+}
+
+@mixin breakpoint($bp: 0) {
+    @media (max-width: $bp) {
+        @content;
+    }
+}
