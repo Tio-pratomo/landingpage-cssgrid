@@ -1,7 +1,7 @@
 {
     "name": "css_grid_mini_project_landing_page",
     "version": "1.0.0",
-    "description": "",
+    "description": "implementasi Materi CSS Grid dari Web Programming Unpas",
     "main": "index.js",
     "private": true,
     "scripts": {
